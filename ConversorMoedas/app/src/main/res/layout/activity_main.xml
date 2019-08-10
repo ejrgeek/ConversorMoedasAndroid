@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- PERGUNTA DA APLICACAO -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/valor_em_real"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <!-- ENTRADA DO VALOR EM REAL -->
+    <EditText
+        android:id="@+id/edit_valor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:inputType="numberSigned"
+        android:text=""
+        android:textSize="20dp"/>
+
+    <!-- TEXTO DO DOLAR E VALOR CONVERTIDO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/valor_em_dolar"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/valor_em_dolar"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <!-- TEXTO DO EURO E VALOR CONVERTIDO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/valor_em_euro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/valor_em_euro"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <!-- BOTAO CALCULAR -->
+    <Button
+        android:id="@+id/botao_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
+        android:text="@string/calcular"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"/>
+
+</LinearLayout>
